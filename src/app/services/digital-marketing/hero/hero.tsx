@@ -86,9 +86,9 @@ const HeroSection = () => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title">Digital Marketing</h1>
+            <h3 className="hero-subtitle">Maximize Your Reach. Convert Your Audience.</h3>
             <p className="hero-description">
-              <h3> Maximize Your Reach. Convert Your Audience.</h3>  Ayunext Solutions crafts data-driven digital strategies designed to grow your brand, increase traffic, and deliver measurable ROI. We specialize in SEO, PPC, social media management, and content that speaks directly to your ideal customer.
-
+              Ayunext Solutions crafts data-driven digital strategies designed to grow your brand, increase traffic, and deliver measurable ROI. We specialize in SEO, PPC, social media management, and content that speaks directly to your ideal customer.
             </p>
             <a
               href="#contact"

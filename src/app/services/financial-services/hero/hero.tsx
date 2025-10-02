@@ -86,8 +86,9 @@ const HeroSection = () => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title">Financial Services</h1>
+            <h3 className="hero-subtitle">Secure Your Financial Future.</h3>
             <p className="hero-description">
-              <h3> Secure Your Financial Future.</h3> Ayunext Solutions provides professional financial services through certified and registered partners. Our offerings include Goal-Based Financial Planning, Wealth Creation and Portfolio Management, and Tax Saving Solutions to help you achieve financial independence.
+              Ayunext Solutions provides professional financial services through certified and registered partners. Our offerings include Goal-Based Financial Planning, Wealth Creation and Portfolio Management, and Tax Saving Solutions to help you achieve financial independence.
             </p>
             <a
               href="#contact"

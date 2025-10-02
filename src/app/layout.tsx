@@ -39,7 +39,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${manrope.variable} ${raleway.variable} ${comfortaa.variable} ${dmSans.variable} ${instrumentSans.variable} ${quicksand.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased" suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }

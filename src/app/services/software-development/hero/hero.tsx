@@ -86,8 +86,8 @@ const HeroSection = () => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title">Software Services</h1>
+            <h3 className="hero-subtitle">Beyond Code: Delivering End-to-End Solutions.</h3>
             <p className="hero-description">
-              <h3> Beyond Code: Delivering End-to-End Solutions. </h3> Delivering End-to-End Solutions.
               Ayunext Solutions builds custom software that drives efficiency and growth. We specialize in enterprise applications, mobile development, and integrating robust platforms, ensuring your technology scales with your ambition.
             </p>
             <a

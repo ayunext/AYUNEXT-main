@@ -51,7 +51,7 @@ export default function Footer() {
           {/* Social Media Icons */}
           <div className={styles.socialIcons}>
             <a
-              href="https://www.linkedin.com/company/ayunextsolutions/" 
+              href="https://www.linkedin.com/company/ayunextsolutions/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,11 +81,11 @@ export default function Footer() {
             {[
               { id: "hero", label: "Home" },
               { id: "about-us", label: "About Us" },
-              { id: "hero", label: "Services" },
+              { id: "services", label: "Services" },
               { id: "ClientsSpeak", label: "Testimonials" },
               { id: "contact", label: "Contact Us" },
-            ].map((link) => (
-              <li key={link.id}>
+            ].map((link, index) => (
+              <li key={`${link.id}-${index}`}>
                 <a
                   href={`#${link.id}`}
                   onClick={(e) => handleSmoothScroll(e, link.id)}
