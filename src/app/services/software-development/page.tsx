@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import "./page.css";
 
 import HeroSection from "./hero/hero";
@@ -49,12 +50,9 @@ export default function SoftwareDevelopment() {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-container">
           <div className="nav-logo">
-            <a href="/" onClick={(e) => {
-              e.preventDefault();
-              router.push("/");
-            }}>
+            <Link href="/">
               <img src="/Ayunextlogo.png" alt="Ayunext Logo" />
-            </a>
+            </Link>
           </div>
 
           <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>

@@ -7,7 +7,6 @@ import {
   DM_Sans,
   Instrument_Sans,
   Quicksand,
-  Zilla_Slab,
 } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +21,6 @@ const instrumentSans = Instrument_Sans({
   variable: "--font-instrumentsans",
 });
 const quicksand = Quicksand({ subsets: ["latin"], variable: "--font-quicksand" });
-// const zillaSlab = Zilla_Slab({ subsets: ["latin"], variable: "--font-zillaslab" });
 
 export const metadata: Metadata = {
   title: "Ayunext",
