@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ==================== Clients Section ==================== */
+.clientsSection {
+  background: linear-gradient(135deg, #008DD1 0%, #008DD1 100%);
+  padding: 80px 20px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Left Content */
+.leftContent {
+  flex: 1 1 400px;
+  max-width: 850px;
+}
+
+.title {
+  font-weight: 200;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.statItem {
+  min-width: 120px;
+  text-align: left;
+}
+
+.statNumber {
+  font-size: clamp(2rem, 4vw, 48px);
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.3;
+}
+
+/* ==================== Right Content - Carousel ==================== */
+.rightContent {
+  flex: 1 1 300px;
+  max-width: 650px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.testimonialWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselViewport {
+  overflow: hidden;
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 20px; /* 🔹 spacing between cards */
+  padding: 0 1x0px; /* 🔹 small padding so edges don’t cut */
+  transition: transform 0.5s ease;
+  will-change: transform;
+  box-sizing: border-box;
+}
+
+/* Testimonial Card */
+.testimonialCard {
+  background: white;
+  padding: 35px 28px;
+  color: #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(100% - 20px); /* 🔹 ensures full card fits viewport minus gap */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 260px;
+  max-height: 320px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Quote Icon */
+.quoteIcon {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  color: #008DD1;
+}
+
+.quoteIcon svg {
+  width: 24px;
+  height: 20px;
+}
+
+/* Testimonial Content */
+.testimonialContent {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.quote {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #000;
+}
+
+/* Author */
+.author {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.authorName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.authorPosition {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Navigation Buttons */
+.navButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  backdrop-filter: blur(10px);
+}
+
+.navButton:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.navButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.navButton svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.navButton:hover:not(:disabled) svg {
+  transform: scale(1.1);
+}
+
+/* Indicators */
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: white;
+  transform: scale(1.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .rightContent {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .testimonialCard {
+    flex: 0 0 100%; /* 🔹 card takes full width on small screens */
+    min-height: 240px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialCard {
+    padding: 25px 20px;
+    min-height: 220px;
+    max-height: 270px;
+  }
+  .quote {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+  .navButton {
+    width: 42px;
+    height: 42px;
+  }
+  .navButton svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonialCard {
+    padding: 18px 14px;
+    min-height: 200px;
+    max-height: 240px;
+  }
+  .navButton {
+    display: none;
+  }
+}

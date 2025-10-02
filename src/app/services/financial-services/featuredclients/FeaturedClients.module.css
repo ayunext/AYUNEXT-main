@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+
+/* 🌟 Section */
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding: clamp(3rem, 5vw, 6rem) 1rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* 🌟 Container */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+/* 🌟 Heading */
+.heading {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: #191A23;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* 🌟 Carousel */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 3rem; /* thoda zyada spacing */
+  animation: scroll 15s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🌟 Card */
+.card {
+  flex: 0 0 auto;
+  background: transparent;
+  padding: 1.5rem;
+  min-width: 240px;  /* ✅ bada card */
+  max-width: 300px;  /* ✅ bada card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* 🌟 Logo */
+.logo {
+  width: 100%;
+  height: auto;
+  max-height: 180px; /* ✅ logo aur bada */
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2); /* ✅ hover pe thoda aur zoom */
+}
+
+/* 🌟 Text Block */
+.textBlock {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 34px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #191A23;
+}
+
+/* 🌟 Mobile */
+@media (max-width: 768px) {
+  .carouselTrack {
+    gap: 1.5rem;
+    animation: scroll 2s linear infinite; /* ✅ mobile pe fast */
+  }
+
+  .card {
+    min-width: 160px;  
+    max-width: 200px;
+    padding: 1rem;
+  }
+
+  .logo {
+    max-height: 120px; 
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+} 
